@@ -7,15 +7,13 @@ const makeButton = (r, c) =>
     c,
   ]}' onclick='updateButton(${r},${c})'></div>`;
 
-const createGridBody = () => {
-  const makeRow = (innerHTML, index) =>
-    `<div id='row${index}' class='row'>` + innerHTML + "</div>";
-  return array.map((ROW, r) => {
-    console.log(ROW, r);
-    // inside row
-    return makeRow(ROW.map((_, c) => makeButton(r, c)).join(""), r);
-  });
-};
+const makeRow = (innerHTML, index) =>
+  `<div id='row${index}' class='row'>` + innerHTML + "</div>";
+
+const createGridBody = () =>
+  array.map((ROW, r) =>
+    makeRow(ROW.map((_, c) => makeButton(r, c)).join(""), r)
+  );
 
 const initialize = () => {
   array = [
@@ -23,7 +21,6 @@ const initialize = () => {
     ["", "", ""],
     ["", "", ""],
   ];
-  console.log("CREATE GTRID BOD?y", createGridBody());
   document.getElementById("container").innerHTML = createGridBody().join("");
   gameCounter = 0;
 };
