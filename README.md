@@ -1,3 +1,7 @@
 # JS_XO_Game
 
-This repo includes an XO game, apparently, when I wrote the code, I found it that there is no need for the .html file, everything is written in the javascript file
+## This is a draft X-O starter file
+
+- You can go to [index.html](/index.html) and start filling the code there. 
+- There is a `fillButton(_, _)` function  that takes 2 parameters. first the number of the button, and second the text you want to fill the button with.
+  - In your case you will use fillButton(
