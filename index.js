@@ -10,13 +10,20 @@ function fillButton(index, text) {
 fillButton(1, "X");
 fillButton(9, "O");
 
-// Start filling the code here
+/**
+ *
+ * THE MAIN FUNUCTION
+ * This function gets executed every time the user clicks the button
+ * Add your code here, since this is going to be your main function
+ * That interacts with the UI
+ */
 function clickButton(index) {
   console.log(`Button number ${index} is clicked`);
 }
 
+// in this function you should check if the player is X or O
 function checkPlayer() {
-  // in this function you should check if the player is X or O
+  // ....
 }
 
 /**
