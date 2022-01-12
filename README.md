@@ -10,7 +10,7 @@ X-O game, or what's known as (Tic-Tac-Toe) is a very useful excercise that goes 
 // 1.
 fillButton(1, "X") // is going to fill the first button (top left corner) with the string "X"
 // 2. 
-fillButton(1, "O") // is going to fill the first button (top left corner) with an empty string
+fillButton(9, "O") // is going to fill the last button (bottom right corner) with the string "O"
 ```
 
 
