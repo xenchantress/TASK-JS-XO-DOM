@@ -7,7 +7,9 @@ function fillButton(index, text) {
 }
 // pre-made a function. You can use this function to present an alert to say someone wins
 function winningAlert(winner) {
-  confirm(`Horraaay, ${winner} wins!`);
+  if(confirm(`Horraaay, ${winner} wins!`)){
+     // The code here will be exectued if you press on OK button that will pop on the window 
+  }
 }
 
 // SAMPLE CODE: This code fills the 1st and 9th button with X and O initially
@@ -28,21 +30,7 @@ function clickButton(index) {
 }
 
 /**
- * 👇🏻 BELOW are functions that you CAN use to structure your code properly.
- * It's always a good idea to make a function for every single purpose.
- *
- */
-
-// In this function you should check if the player is X or O
-function checkPlayer() {
-  // ....
-}
-
-/**
- *
- * checkWinner should be a function that checks
- * who is winning and returns the winner
+ * (Optional) It's always a good idea to make a function for every single purpose.
  */
 // function checkWinner
-
 // function restartGame
